@@ -10,6 +10,8 @@ using ProductShop.Persistence.Helpers;
 using ProductShop.Services.Interfaces.Common;
 using ProductShop.Services.Interfaces.Products;
 using AutoMapper;
+using ProductShop.Domain.Entities.Categories;
+using ProductShop.DataAccess.ViewModels;
 
 namespace ProductShop.Services.Services.Products;
 
@@ -39,8 +41,16 @@ public class ProductService : IProductService
 
     public async Task<bool> CreateAsync(ProductCreateDto dto)
     {
-        Product product = _mapper.Map<Product>(dto);
-        product.CreatedAt = product.UpdatedAt = TimeHelper.GetDateTime();
+        Product product = new Product()
+        {
+            Name = dto.Name,
+            CategoryId=dto.CategoryId,
+            BrandId=dto.BrandId,
+            UnitPrice=dto.UnitPrice,
+            Description=dto.Description,
+            CreatedAt = TimeHelper.GetDateTime(),
+            UpdatedAt = TimeHelper.GetDateTime()
+        };
 
         var result = await _repository.CreateAsync(product);
 
@@ -66,9 +76,49 @@ public class ProductService : IProductService
         return products;
     }
 
-    public Task<bool> GetAllViewAsync(PaginationParams @params)
+    public async Task<IList<ProductViewModel>> GetAllViewAsync(PaginationParams @params)
     {
-        throw new NotImplementedException();
+
+
+        var products = await _repository.GetAllAsync(@params);
+        var count = await _repository.CountAsync();
+        var brands = await _brandRepository.GetAllAsync(@params);
+        var categories = await _categoryRepository.GetAllAsync(@params);
+
+        List<ProductViewModel> productViewModels = new List<ProductViewModel>();
+
+        for (int i = 0; i < products.Count; i++)
+        {
+            ProductViewModel productViewModel = new ProductViewModel();
+            productViewModel.Id = products[i].Id;
+            productViewModel.BrandId = products[i].BrandId;
+            productViewModel.CategoryId = products[i].CategoryId;
+            productViewModel.Name = products[i].Name;
+            productViewModel.UnitPrice = products[i].UnitPrice;
+            productViewModel.Description = products[i].Description;
+            productViewModel.CreatedAt = products[i].CreatedAt;
+            productViewModel.UpdatedAt = products[i].UpdatedAt;
+            for (int j = 0; j < brands.Count; j++)
+            {
+                if (productViewModel.BrandId == brands[j].Id)
+                {
+                    productViewModel.BrandName = brands[j].Name;
+                    break;
+                }
+            }
+            for (int j = 0; j < categories.Count; j++)
+            {
+                if (productViewModel.CategoryId == categories[j].Id)
+                {
+                    productViewModel.CategoryName = categories[j].Name;
+                    break;
+                }
+            }
+            productViewModels.Add(productViewModel);
+        }
+        _paginator.Paginate(count, @params);
+
+        return productViewModels;
     }
 
     public async Task<Product> GetByIdAsync(long productId)

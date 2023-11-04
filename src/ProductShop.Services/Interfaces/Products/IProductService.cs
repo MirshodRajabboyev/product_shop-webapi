@@ -1,4 +1,5 @@
 ﻿using ProductShop.Application.Utilities;
+using ProductShop.DataAccess.ViewModels;
 using ProductShop.Domain.Entities.Products;
 using ProductShop.Persistence.Dtos.Products;
 
@@ -18,5 +19,5 @@ public interface IProductService
 
     public Task<bool> UpdateAsync(long productId, ProductUpdateDto dto);
 
-    public Task<bool> GetAllViewAsync(PaginationParams @params);
+    public Task<IList<ProductViewModel>> GetAllViewAsync(PaginationParams @params);
 }
