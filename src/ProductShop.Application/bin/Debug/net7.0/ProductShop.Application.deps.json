@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v7.0": {
       "ProductShop.Application/1.0.0": {
+        "dependencies": {
+          "ProductShop.Domain": "1.0.0"
+        },
         "runtime": {
           "ProductShop.Application.dll": {}
+        }
+      },
+      "ProductShop.Domain/1.0.0": {
+        "runtime": {
+          "ProductShop.Domain.dll": {}
         }
       }
     }
   },
   "libraries": {
     "ProductShop.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ProductShop.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

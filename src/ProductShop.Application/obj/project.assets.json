@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {}
+    "net7.0": {
+      "ProductShop.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/ProductShop.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProductShop.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "ProductShop.Domain/1.0.0": {
+      "type": "project",
+      "path": "../ProductShop.Domain/ProductShop.Domain.csproj",
+      "msbuildProject": "../ProductShop.Domain/ProductShop.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net7.0": []
+    "net7.0": [
+      "ProductShop.Domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Victus\\.nuget\\packages\\": {},
@@ -38,7 +57,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Victus\\OneDrive\\Рабочий стол\\product_shop-webapi\\src\\ProductShop.Domain\\ProductShop.Domain.csproj": {
+              "projectPath": "C:\\Users\\Victus\\OneDrive\\Рабочий стол\\product_shop-webapi\\src\\ProductShop.Domain\\ProductShop.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

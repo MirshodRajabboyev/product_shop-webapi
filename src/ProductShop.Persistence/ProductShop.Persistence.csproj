@@ -5,5 +5,18 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
+	
+  <ItemGroup>
+    <ProjectReference Include="..\ProductShop.DataAccess\ProductShop.DataAccess.csproj" />
+  </ItemGroup>
 
+	<ItemGroup>
+		<Folder Include="Attributes\" />
+		<Folder Include="Filters\" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="5.0.17" />
+	</ItemGroup>
+	
 </Project>
