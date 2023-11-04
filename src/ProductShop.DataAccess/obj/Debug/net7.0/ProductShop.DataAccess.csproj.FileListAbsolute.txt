@@ -10,3 +10,8 @@ C:\Users\Victus\OneDrive\Рабочий стол\product_shop-webapi\src\Product
 C:\Users\Victus\OneDrive\Рабочий стол\product_shop-webapi\src\ProductShop.DataAccess\obj\Debug\net7.0\refint\ProductShop.DataAccess.dll
 C:\Users\Victus\OneDrive\Рабочий стол\product_shop-webapi\src\ProductShop.DataAccess\obj\Debug\net7.0\ProductShop.DataAccess.pdb
 C:\Users\Victus\OneDrive\Рабочий стол\product_shop-webapi\src\ProductShop.DataAccess\obj\Debug\net7.0\ref\ProductShop.DataAccess.dll
+C:\Users\Victus\OneDrive\Рабочий стол\product_shop-webapi\src\ProductShop.DataAccess\bin\Debug\net7.0\ProductShop.Application.dll
+C:\Users\Victus\OneDrive\Рабочий стол\product_shop-webapi\src\ProductShop.DataAccess\bin\Debug\net7.0\ProductShop.Domain.dll
+C:\Users\Victus\OneDrive\Рабочий стол\product_shop-webapi\src\ProductShop.DataAccess\bin\Debug\net7.0\ProductShop.Application.pdb
+C:\Users\Victus\OneDrive\Рабочий стол\product_shop-webapi\src\ProductShop.DataAccess\bin\Debug\net7.0\ProductShop.Domain.pdb
+C:\Users\Victus\OneDrive\Рабочий стол\product_shop-webapi\src\ProductShop.DataAccess\obj\Debug\net7.0\ProductShop.DataAccess.csproj.CopyComplete

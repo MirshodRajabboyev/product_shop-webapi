@@ -10,3 +10,6 @@ C:\Users\Victus\OneDrive\Рабочий стол\product_shop-webapi\src\Product
 C:\Users\Victus\OneDrive\Рабочий стол\product_shop-webapi\src\ProductShop.Application\obj\Debug\net7.0\refint\ProductShop.Application.dll
 C:\Users\Victus\OneDrive\Рабочий стол\product_shop-webapi\src\ProductShop.Application\obj\Debug\net7.0\ProductShop.Application.pdb
 C:\Users\Victus\OneDrive\Рабочий стол\product_shop-webapi\src\ProductShop.Application\obj\Debug\net7.0\ref\ProductShop.Application.dll
+C:\Users\Victus\OneDrive\Рабочий стол\product_shop-webapi\src\ProductShop.Application\bin\Debug\net7.0\ProductShop.Domain.dll
+C:\Users\Victus\OneDrive\Рабочий стол\product_shop-webapi\src\ProductShop.Application\bin\Debug\net7.0\ProductShop.Domain.pdb
+C:\Users\Victus\OneDrive\Рабочий стол\product_shop-webapi\src\ProductShop.Application\obj\Debug\net7.0\ProductShop.Application.csproj.CopyComplete

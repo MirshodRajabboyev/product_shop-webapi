@@ -10,3 +10,12 @@ C:\Users\Victus\OneDrive\Рабочий стол\product_shop-webapi\src\Product
 C:\Users\Victus\OneDrive\Рабочий стол\product_shop-webapi\src\ProductShop.Services\obj\Debug\net7.0\refint\ProductShop.Services.dll
 C:\Users\Victus\OneDrive\Рабочий стол\product_shop-webapi\src\ProductShop.Services\obj\Debug\net7.0\ProductShop.Services.pdb
 C:\Users\Victus\OneDrive\Рабочий стол\product_shop-webapi\src\ProductShop.Services\obj\Debug\net7.0\ref\ProductShop.Services.dll
+C:\Users\Victus\OneDrive\Рабочий стол\product_shop-webapi\src\ProductShop.Services\bin\Debug\net7.0\ProductShop.Application.dll
+C:\Users\Victus\OneDrive\Рабочий стол\product_shop-webapi\src\ProductShop.Services\bin\Debug\net7.0\ProductShop.DataAccess.dll
+C:\Users\Victus\OneDrive\Рабочий стол\product_shop-webapi\src\ProductShop.Services\bin\Debug\net7.0\ProductShop.Domain.dll
+C:\Users\Victus\OneDrive\Рабочий стол\product_shop-webapi\src\ProductShop.Services\bin\Debug\net7.0\ProductShop.Persistence.dll
+C:\Users\Victus\OneDrive\Рабочий стол\product_shop-webapi\src\ProductShop.Services\bin\Debug\net7.0\ProductShop.Persistence.pdb
+C:\Users\Victus\OneDrive\Рабочий стол\product_shop-webapi\src\ProductShop.Services\bin\Debug\net7.0\ProductShop.Application.pdb
+C:\Users\Victus\OneDrive\Рабочий стол\product_shop-webapi\src\ProductShop.Services\bin\Debug\net7.0\ProductShop.DataAccess.pdb
+C:\Users\Victus\OneDrive\Рабочий стол\product_shop-webapi\src\ProductShop.Services\bin\Debug\net7.0\ProductShop.Domain.pdb
+C:\Users\Victus\OneDrive\Рабочий стол\product_shop-webapi\src\ProductShop.Services\obj\Debug\net7.0\ProductShop.Services.csproj.CopyComplete
